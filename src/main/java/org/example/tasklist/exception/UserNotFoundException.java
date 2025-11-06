@@ -5,8 +5,7 @@ import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
 @Slf4j
-//@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "User is not Found")
-@ResponseStatus(code = HttpStatus.NOT_FOUND)
+@ResponseStatus(code = HttpStatus.NOT_FOUND, reason = "User is not Found")
 public class UserNotFoundException extends Exception {
 
     public UserNotFoundException(String message) {
